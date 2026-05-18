@@ -314,6 +314,46 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "/planner/travels/4/places/13/",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "visited",
+              "value": "1",
+              "type": "text",
+              "uuid": "a893dd36-5fb2-444d-bde6-35cd9b8df98f"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/v1/planner/travels/4/places/13/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "v1",
+            "planner",
+            "travels",
+            "4",
+            "places",
+            "13",
+            ""
+          ]
+        }
+      },
+      "response": []
     }
   ]
 }
