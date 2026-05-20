@@ -1,0 +1,570 @@
+{
+  "info": {
+    "_postman_id": "8cc40778-41e3-474a-ae3b-b9b02f71b8ba",
+    "name": "TravelProject_v2",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54266317",
+    "_collection_link": "https://go.postman.co/collection/54266317-8cc40778-41e3-474a-ae3b-b9b02f71b8ba?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "travels",
+      "item": [
+        {
+          "name": "get travels list",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/planner/travels/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "planner",
+                "travels",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get single travel",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/planner/travels/6/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "planner",
+                "travels",
+                "6",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add travel",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "my travel",
+                  "type": "text",
+                  "uuid": "aa5d2881-07c1-41ae-a846-28cb7f938f1e"
+                },
+                {
+                  "key": "description",
+                  "value": "some notes ...",
+                  "type": "text",
+                  "uuid": "a09e049d-8177-4a1a-94ec-70466b4284c5"
+                },
+                {
+                  "key": "start_date",
+                  "value": "2026-01-01",
+                  "type": "text",
+                  "uuid": "1214f4be-12da-4682-91f3-79753eba91c0"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/planner/travels/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "planner",
+                "travels",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update travel",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "my travel 3",
+                  "type": "text",
+                  "uuid": "aa5d2881-07c1-41ae-a846-28cb7f938f1e"
+                },
+                {
+                  "key": "description",
+                  "value": "some notes 3...",
+                  "type": "text",
+                  "uuid": "a09e049d-8177-4a1a-94ec-70466b4284c5"
+                },
+                {
+                  "key": "start_date",
+                  "value": "2026-03-13",
+                  "type": "text",
+                  "uuid": "1214f4be-12da-4682-91f3-79753eba91c0"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/planner/travels/3/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "planner",
+                "travels",
+                "3",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "partial update travel",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "start_date",
+                  "value": "2026-12-12",
+                  "type": "text",
+                  "uuid": "1214f4be-12da-4682-91f3-79753eba91c0"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/planner/travels/3/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "planner",
+                "travels",
+                "3",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete travel",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/planner/travels/1/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "planner",
+                "travels",
+                "1",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add travel + nested places",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Summer Europe Trip\",\r\n  \"description\": \"Trip with planned places to visit\",\r\n  \"start_date\": \"2026-06-15\",\r\n  \"places\": [\r\n    {\r\n      \"external_id\": 75644,\r\n      \"notes\": \"First place\"\r\n    },\r\n    {\r\n      \"external_id\": 86385,\r\n      \"visited\": true\r\n    },\r\n    {\r\n      \"external_id\": 151363\r\n    },\r\n    {\r\n      \"external_id\": 20684,\r\n      \"notes\": \"Fourth place\",\r\n      \"visited\": false\r\n    }\r\n  ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/planner/travels/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "planner",
+                "travels",
+                ""
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "places",
+      "item": [
+        {
+          "name": "get places list from travel",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/planner/travels/6/places/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "planner",
+                "travels",
+                "6",
+                "places",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get certain place from travel",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/planner/travels/1/places/3/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "planner",
+                "travels",
+                "1",
+                "places",
+                "3",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add place into travel",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "external_id",
+                  "value": "86385",
+                  "type": "text",
+                  "uuid": "81d1a9c0-115c-4321-bfac-e238e66ca03c"
+                },
+                {
+                  "key": "notes",
+                  "value": "place notes ...",
+                  "type": "text",
+                  "uuid": "8c969ffd-54ac-4084-a1a8-54a437523215"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/planner/travels/1/places/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "planner",
+                "travels",
+                "1",
+                "places",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "partial update place in travel",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "notes",
+                  "value": "place notes ...(pathc)",
+                  "type": "text",
+                  "uuid": "8c969ffd-54ac-4084-a1a8-54a437523215"
+                },
+                {
+                  "key": "visited",
+                  "value": "1",
+                  "type": "text",
+                  "uuid": "9646ad36-fb43-443f-9ad0-370787359348"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/planner/travels/1/places/3/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "planner",
+                "travels",
+                "1",
+                "places",
+                "3",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update place into travel",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "external_id",
+                  "value": "151363",
+                  "type": "text",
+                  "uuid": "81d1a9c0-115c-4321-bfac-e238e66ca03c"
+                },
+                {
+                  "key": "notes",
+                  "value": "place notes ...(pathc)",
+                  "type": "text",
+                  "uuid": "8c969ffd-54ac-4084-a1a8-54a437523215"
+                },
+                {
+                  "key": "visited",
+                  "value": "0",
+                  "type": "text",
+                  "uuid": "341f5063-545c-4291-8c48-73c0d19ad36e"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/planner/travels/1/places/3/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "planner",
+                "travels",
+                "1",
+                "places",
+                "3",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete place from travel",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/planner/travels/1/places/3/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "planner",
+                "travels",
+                "1",
+                "places",
+                "3",
+                ""
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "get artworks data",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/v1/planner/artworks/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "v1",
+            "planner",
+            "artworks",
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
